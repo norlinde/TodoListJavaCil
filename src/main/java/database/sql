@@ -1,0 +1,11 @@
+SET GLOBAL  time_zone = '+3:00';
+CREATE DATABASE IF NOT EXISTS TODOList;
+USE TODOList;
+
+CREATE TABLE IF NOT EXISTS task(
+    id int not null auto_increment,
+    taskName varchar(100) not null,
+    deadline varchar(100) not null,
+   status boolean,
+    primary key(id)
+);
